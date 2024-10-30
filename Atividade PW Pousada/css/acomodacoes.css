@@ -1,0 +1,41 @@
+.cards {
+    display: flex;
+    justify-content: space-around; 
+    margin: 20px; 
+}
+
+.card {
+    margin: 10px; 
+}
+
+footer {
+    margin-top: 31px;
+    height: 30px;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    z-index: 1;
+}
+
+.dropdown-center {
+    margin-top: 50px;
+    margin-left: 50px;
+    background: white;
+    width: 68px;
+    border-radius: 10%;
+}
+@keyframes mudarFundo {
+    0%   { background-image: url(../img/paisagem.webp); }
+    33%  { background-image: url(../img/paisagem2.webp); }
+    66%  { background-image: url(../img/paisagem3.jpg); }
+    100% { background-image: url(../img/paisagem.webp); }
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    animation: mudarFundo 12s infinite;
+    background-size: cover;
+    background-position: center;
+}

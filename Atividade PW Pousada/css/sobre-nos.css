@@ -1,0 +1,51 @@
+body {
+    background-image: url(../img/paisagem3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
+    padding: 20px;
+}
+
+.card {
+    border: none; 
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0; 
+}
+
+footer {
+    margin-top: 40px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.dropdown-center {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+@keyframes mudarFundo {
+    0%   { background-image: url(../img/paisagem.webp); }
+    33%  { background-image: url(../img/paisagem2.webp); }
+    66%  { background-image: url(../img/paisagem3.jpg); }
+    100% { background-image: url(../img/paisagem.webp); }
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    animation: mudarFundo 12s infinite;
+    background-size: cover;
+    background-position: center;
+}
