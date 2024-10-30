@@ -1,0 +1,16 @@
+li {
+    background-color: rgb(23, 19, 29);
+    color: white;
+    height: 50px;
+    border: solid black 1px;
+    padding: 10px;
+    font-size: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
