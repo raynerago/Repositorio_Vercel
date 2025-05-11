@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+body {
+    background-image: url('/img/BackgroundLove.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Special Gothic Expanded One';
+    color: #8a0c60;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    color: rgb(117, 17, 17);
+    text-align: center;
+}
+
+.container {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 212, 212);
+    padding: 20px;
+    border-radius: 20px;
+    border: dashed 2px gold;
+    opacity: 0.95;
+}
+
+.container p {
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    font-size: 14px;
+}
+
+.container img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 190px;
+    height: 190px;
+    border: solid rgb(255, 255, 255) 2px;
+    box-shadow: 4px 5px 5px #d83838;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.buttons button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    background-color: #ffd6e8;
+    color: #8a0c60;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #f7a4c3;
+}
+
+.div_fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .container img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .buttons {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .buttons button {
+        flex: 1 1 30%;
+        min-width: 40px;
+    }
+
+    .container p {
+        font-size: 13px;
+    }
+
+    h1, h2 {
+        font-size: 1.3em;
+    }
+}
